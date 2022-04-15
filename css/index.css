@@ -1,0 +1,65 @@
+/*change the background color of the body*/
+body {
+    background-color: #ffc0cb;
+}
+/*change the defalt text color, customize font family*/
+* {
+    color: #000000;
+    font-family:'Courier New', Courier, monospace;
+    padding: 3px;
+    margin: 1px;
+    }
+/*add spacing between sections*/    
+section {
+    padding: 3px;
+    margin: 5px;
+}
+/*change the font size, weight and color of all headings*/
+h1, h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ffffff;
+}
+/*Transform the "Experience" list items into styled blocks*/
+.experience li {
+    border-block-style: dotted;
+    writing-mode: horizontal-tb;
+}
+/*Transform the "Skills" list items into styled blocks*/
+#skills li {
+    border: 5px solid black; 
+}
+/*Style the Leave a Message form elements*/
+label {
+    font-size: 1.25em;
+    color: black;
+    display: block;
+    width: 200px;
+}
+input, textarea{
+    width: 25%;
+}
+textarea {
+    height: 150px;
+}
+footer {
+    background-color: #ffffff;
+    padding: 5px;
+}
+#submitButton {
+    border-radius: 100px;
+    width: 200px;
+    height: 100px;
+}
+/*Tablet*/
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+    label {
+        color: red;
+    }
+}
+/*Mobile Device*/
+@media screen and (max-width: 767px) {
+    label {
+        color: blue;
+    }
+}

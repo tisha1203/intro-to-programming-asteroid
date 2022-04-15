@@ -7,17 +7,18 @@
 <meta name="keywords" content="HTML, CSS, JavaScript">
 <meta name="author" content="Tisha Davis">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css"></link>
     </head>
 <body>
     <section>
-<h1>About</h1>
 <img src= "Images\Tisha Pic A Little Gray.JPG" alt="Tisha’s Headshot">
+<h1>About</h1>
 <p>Tisha possesses 35 years of professional experience that incorporates auditing, accounting, event planning, marketing, fund development, human resources, graphic design and entrepreneurial endeavors.
 With a zeal for education, Tisha attained a Master of Science degree in Nonprofit Management at Eastern University.  Tisha also earned a Bachelor of Science degree in Accounting from Syracuse University.  She has a Certificate in Events Leadership from Temple University, a Certificate in Graphic Design from Sessions College for Professional Design, a Certificate in Entrepreneurship Essentials from Harvard Business School Online, a Certificate in EEO Investigative Training from Take Charge EEO, LLC, and completed the Entrepreneurship Acceleration Certificate program with Wharton University of Pennsylvania. 
 Tisha is proficient in Canva, Photoshop, InDesign, Splice video editing, PowerPoint, Word, Excel, Outlook, Dynamics CRM, QuickBooks, Wave, E-Recruit, MailChimp, Constant Contact, Cvent, Hubspot, Basecamp and ConvertKit.
 </p>
 </section>
-<section>
+<section class="experience">
 <h1>Experience</h1>
 <p>Positions I've held: 
     <ul><li><strong>Founder and CEO, </strong>Image Special Events, LLC</li> 
@@ -54,12 +55,14 @@ Tisha is proficient in Canva, Photoshop, InDesign, Splice video editing, PowerPo
     <label for="message">Message</label>
     <textarea name="message" required="true"></textarea><br>
     <label for="submit">Submit</label>
-    <button type="submit">Submit</button>
+    <button type="submit" id="submitButton">Submit</button>
 </form>
 </section>
 <section id="messages">
     <h2>Messages</h2>
-    <ul></ul>
+    <ul>
+        <li><a href="mailto:tisha.davis@yahoo.com">Tisha Davis</a><span> Message: person's message</span></li>
+    </ul>
     </section>
 <footer></footer>
 <script src="js/index.js"></script>
