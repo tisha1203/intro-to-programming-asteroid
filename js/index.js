@@ -54,6 +54,6 @@ messageForm.addEventListener('submit', (event) => {
     //Remove the `entry` element from the DOM
     entry.remove()
     //add a new line of code to clear the form
-    messageForm.reset()
     })
+    messageForm.reset()
 })
