@@ -1,8 +1,77 @@
+/*add a navigational header to your webpage*/
+.topnav {
+    display: flex;
+    overflow: hidden;
+    font-weight: bold;
+    justify-content: right;
+  }
+  
+  .topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color:black;
+    color: white;
+  }
+  
+/* change header background color to white */
+header {
+    background-color: white;
+    height: 400px;
+}
+/* Add circles to the top of the page */
+#circle1 {
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    margin-left: 200px;
+    background: #ffc0cb;
+  }
+#circle2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    margin-top: 100px;
+    margin-left: 80px;
+    background: black;
+  }
+  #circle3 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-left: 30px;
+    background: #ffc0cb;
+  }
+#circle4 {
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    margin-left: 80px;
+    background: black;
+  }
+/* Resize image */
+img {
+    border-radius: 50%;
+    margin-top: auto;
+}
+
+/* center image */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /*change the background color of the body*/
 body {
     background-color: #ffc0cb;
 }
-/*change the defalt text color, customize font family*/
+/*change the default text color, customize font family*/
 * {
     color: #000000;
     font-family:'Courier New', Courier, monospace;
@@ -12,44 +81,117 @@ body {
 /*add spacing between sections*/    
 section {
     padding: 3px;
-    margin: 5px;
+    margin-bottom: 50px;
 }
+
 /*change the font size, weight and color of all headings*/
 h1, h2 {
     font-size: 2.5em;
     font-weight: bold;
     color: #ffffff;
+    margin-left: 2.5%;
 }
-/*Transform the "Experience" list items into styled blocks*/
-.experience li {
-    border-block-style: dotted;
-    writing-mode: horizontal-tb;
+/*Add a navigational header to the webpage*/
+/*#container {
+    border: 1 px solid #ffc0cb;
+    display: flex;
+    height: fit-content;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}*/
+/* move about text over to the right */
+#about {
+    margin-left: 2%;
+    margin-right: 2%;
 }
-/*Transform the "Skills" list items into styled blocks*/
+/* Change the layout of your "Experience" section using 
+rows and columns so items are displayed in a grid rather 
+than a list */
+.grid-container {
+  display: grid;
+    /*grid-template-columns: repeat(3, 1fr);*/
+    grid-template-areas:
+        "grid-item1 grid-item2 grid-item3"
+        "grid-item4 grid-item5 grid-item6"
+        ". grid-item7 .";
+        grid-gap: 10px;
+}
+.grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6, .grid-item7 {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.grid-item1 {
+    grid-area: grid-item1;
+}
+.grid-item2 {
+    grid-area: grid-item2;
+}
+.grid-item3 {
+    grid-area: grid-item3;
+}
+.grid-item4 {
+    grid-area: grid-item4;
+}
+.grid-item5 {
+    grid-area: grid-item5;
+}
+.grid-item6 {
+    grid-area: grid-item6;
+}
+.grid-item7 {
+    grid-area: grid-item7;
+}
+/* move skills items over to the right */
 #skills li {
-    border: 5px solid black; 
+    margin-left: 3.5%;
 }
-/*Style the Leave a Message form elements*/
+/* move connect list items over to the right */
+#connect li {
+    margin-left: 3.5%;
+}
+/*Style the form elements*/
 label {
     font-size: 1.25em;
     color: black;
-    display: block;
+    display: flex;
     width: 200px;
+    margin-left: 2.5%;
+    margin-top: 20px;
 }
 input, textarea{
-    width: 25%;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
 }
 textarea {
     height: 150px;
 }
+/* Format the submit button */
+#submitButton {
+    display: block;
+    border-style:groove;
+    width: 100px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25em;
+    color: white;
+    background-color: #000000;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+    border-radius: 2px;
+}
 footer {
     background-color: #ffffff;
     padding: 5px;
-}
-#submitButton {
-    border-radius: 100px;
-    width: 200px;
-    height: 100px;
 }
 /*Tablet*/
 @media screen and (min-width: 767px) and (max-width: 1024px) {
