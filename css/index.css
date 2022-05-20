@@ -24,35 +24,80 @@ header {
     height: 400px;
 }
 /* Add circles to the top of the page */
+.animation{
+    animation-name : tisha;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes tisha {
+    from { transform: rotate(0deg) translateX(10px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(10px) rotate(-360deg); }
+}
 #circle1 {
     width: 75px;
     height: 75px;
     border-radius: 50px;
-    margin-left: 200px;
+    margin-top: -30px;
+    margin-left: 175px;
+    position: absolute;
     background: #ffc0cb;
   }
 #circle2 {
     width: 60px;
     height: 60px;
     border-radius: 50px;
-    margin-top: 100px;
-    margin-left: 80px;
+    margin-top: 225px;
+    margin-left: 60px;
+    position: absolute;
     background: black;
   }
   #circle3 {
     width: 10px;
     height: 10px;
     border-radius: 50px;
-    margin-top: 10px;
-    margin-left: 30px;
+    margin-top: 100px;
+    margin-left: 20px;
+    position: absolute;
     background: #ffc0cb;
   }
 #circle4 {
     width: 16px;
     height: 16px;
     border-radius: 50px;
-    margin-left: 80px;
+    margin-top: -30px;
+    margin-left: 40px;
+    position: absolute;
     background: black;
+  }
+  #circle5 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    margin-top: 120px;
+    margin-left: 630px;
+    position: absolute;
+    background: #ffc0cb;
+  }
+  #circle6 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-left: 730px;
+    position: absolute;
+    background: #ffc0cb;
+  }
+  #circle7 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-left: 330px;
+    position: absolute;
+    background: #ffc0cb;
   }
 /* Resize image */
 img {
@@ -67,6 +112,9 @@ img {
     margin-right: auto;
 }
 
+#picture{
+    margin-top: 80px;
+}
 /*change the background color of the body*/
 body {
     background-color: #ffc0cb;
@@ -105,6 +153,7 @@ h1, h2 {
 #about {
     margin-left: 2%;
     margin-right: 2%;
+    margin-top: 10px;
 }
 /* Change the layout of your "Experience" section using 
 rows and columns so items are displayed in a grid rather 
@@ -150,8 +199,15 @@ than a list */
 #skills li {
     margin-left: 3.5%;
 }
+/* move projects items over to the right */
+#projects li {
+    margin-left: 3.5%;
+}
 /* move connect list items over to the right */
 #connect li {
+    margin-left: 3.5%;
+}
+#messages li {
     margin-left: 3.5%;
 }
 /*Style the form elements*/

@@ -57,3 +57,39 @@ messageForm.addEventListener('submit', (event) => {
     })
     messageForm.reset()
 })
+var githubRequest = new XMLHttpRequest ();
+githubRequest.open('GET', 'https://api.github.com/users/tisha1203/repos')
+githubRequest.send();
+
+//var response;
+
+githubRequest.addEventListener('load', () => {
+    const repositories = JSON.parse(githubRequest.response);
+    console.log(repositories, "This is a test");
+
+    const projectSection = document.getElementById("projects");
+    const projectList = projectSection.querySelector("ul");
+
+    for (let i = 0; i < repositories.length; i++) {
+        const project = document.createElement("li")
+        project.innerText = repositories[i].name;
+        projectList.appendChild(project)
+    }
+});
+//githubRequest.onreadystatechange = function () {    
+// if (githubRequest.readyState == 4) {
+// response = JSON.parse(githubRequest.response)
+// }
+// console.log(response);
+// var projectSelection = document.getElementById('projects');
+// console.log(projectSelection);
+// var projectList = projectSelection.querySelector('ul');
+// console.log(projectList);
+// for (var i = 0; i<response.length; i++){ 
+//    var project = document.createElement('li');
+//    project.innerHTML = response[i].name;
+//    projectList.appendChild(project);
+// }
+
+// githubRequest.open('GET', 'https://api.github.com/users/tisha1203/repos')
+// githubRequest.send();
